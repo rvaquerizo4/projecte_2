@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Alumne</title>
+</head>
+<body>
+    <h1>Nou alumne</h1>
+    <h2>Afegir nou alumne</h2>
+   <form method="post" th:action="@{/api/nou_alumne_add}">
+	  <label for="nom">Nom:</label>
+	  <input type="text" id="nom" name="nom"><br>
+	
+	  <label for="cognom">Cognom:</label>
+	  <input type="text" id="cognoms" name="cognoms"><br>
+	
+	  <label for="cicle">Cicle:</label>
+	  <input type="text" id="cicle" name="cicle"><br>
+	
+	  <label for="empresa">Empresa:</label>
+	  <input type="text" id="empresa" name="empresa"><br>
+	
+	  <button type="submit">Afegir</button>
+</form>
+
+</body>
+</html>

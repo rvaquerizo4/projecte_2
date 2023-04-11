@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Empreses</title>
+</head>
+<body>
+    <h1>Nova Empresa</h1>
+    <h2>Afegir nova empresa</h2>
+    <form method="post" th:action="@{/api/empresas/nova_empresa_add}">
+        <p>
+            <label>CIF: <input type="text" name="cif" /></label>
+        </p>
+        <p>
+            <label>Nom: <input type="text" name="nom" /></label>
+        </p>
+        <p>
+            <label>Adreça: <input type="text" name="adreca" /></label>
+        </p>
+        <button type="submit">Afegir</button>
+    </form>
+</body>
+</html>

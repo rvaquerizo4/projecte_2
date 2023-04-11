@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Llistat d'empreses</title>
+</head>
+<body>
+    <h1>Llistat d'empreses</h1>
+
+    <table>
+
+            <tr>
+                <th>CIF</th>
+                <th>Nom</th>
+                <th>Adreça</th>
+            </tr>
+
+           <tr th:each="empresa : ${empresas}">
+                <td th:text="${empresa.cif}"></td>
+                <td th:text="${empresa.nom}"></td>
+                <td th:text="${empresa.adreca}"></td>
+            </tr>
+	</table>
+</body>
+</html>
